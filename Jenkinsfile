@@ -6,10 +6,6 @@ pipeline {
         VERSION = "${env.GIT_TAG_NAME}"
     }
 
-    triggers {
-        // If using GitHub/GitLab webhook, set it up to trigger on tag push
-    }
-
     stages {
         stage('Check for Tag') {
             when {
